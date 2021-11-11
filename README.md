@@ -83,7 +83,7 @@ A rota deve receber, pelo header da requisição, uma propriedade `username` con
 
 - **Should be able to create a new user**
 
-Para que esse teste passe, você deve permitir que um usuário seja criado e retorne um JSON com o usuário criado. Você pode ver o formato de um usuário [aqui](https://www.notion.so/Desafio-01-Conceitos-do-Node-js-59ccb235aecd43a6a06bf09a24e7ede8). 
+Para que esse teste passe, você deve permitir que um usuário seja criado e retorne um JSON com o usuário criado. 
 
 Também é necessário que você retorne a resposta com o código `201`.
 
@@ -116,11 +116,11 @@ Para completar todos os testes referentes à *todos* é necessário antes ter co
 
 - **Should be able to list all user's todos**
 
-Para que esse teste passe, na rota GET `/todos` é necessário pegar o usuário que foi repassado para o `request` no middleware `checkExistsUserAccount` e então retornar a lista `todos` que está no objeto do usuário conforme foi criado para satisfazer o [primeiro teste](https://www.notion.so/Desafio-01-Conceitos-do-Node-js-59ccb235aecd43a6a06bf09a24e7ede8).
+Para que esse teste passe, na rota GET `/todos` é necessário pegar o usuário que foi repassado para o `request` no middleware `checkExistsUserAccount` e então retornar a lista `todos` que está no objeto do usuário conforme foi criado para satisfazer o primeiro teste.
 
 - **Should be able to create a new todo**
 
-Para que esse teste passe, na rota POST `/todos` é necessário pegar o usuário que foi repassado para o `request` no middleware `checkExistsUserAccount`, pegar também o `title` e o `deadline` do corpo da requisição e adicionar um novo *todo* na lista `todos` que está no objeto do usuário. Lembre-se de seguir a estrutura padrão de um *todo* como mostrado [aqui](https://www.notion.so/Desafio-01-Conceitos-do-Node-js-59ccb235aecd43a6a06bf09a24e7ede8).
+Para que esse teste passe, na rota POST `/todos` é necessário pegar o usuário que foi repassado para o `request` no middleware `checkExistsUserAccount`, pegar também o `title` e o `deadline` do corpo da requisição e adicionar um novo *todo* na lista `todos` que está no objeto do usuário. Lembre-se de seguir a estrutura padrão de um *todo*.
 
 Após adicionar o novo *todo* na lista, é necessário retornar um status `201` e o *todo* no corpo da resposta.
 
