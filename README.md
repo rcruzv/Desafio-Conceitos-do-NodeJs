@@ -12,23 +12,7 @@ Essa será uma aplicação para gerenciar tarefas (em inglês *todos*). S
 
 Tudo isso para cada usuário em específico (o `username` será passado pelo header). A seguir veremos com mais detalhes o que e como precisa ser feito 🚀
 
-## Template da aplicação
-
-Para realizar esse desafio, criamos para você esse modelo que você deve utilizar como um template do GitHub.
-
-O template está disponível na seguinte URL: 
-
-[rocketseat-education/ignite-template-conceitos-do-nodejs](https://github.com/rocketseat-education/ignite-template-conceitos-do-nodejs)
-
-**Dica**: Caso não saiba utilizar repositórios do GitHub como template, temos um guia em **[nosso FAQ](https://www.notion.so/FAQ-Desafios-ddd8fcdf2339436a816a0d9e45767664).**
-
-Agora navegue até a pasta criada, abra no Visual Studio Code e por último abra o arquivo `index.js`. Lembre-se de executar o comando `yarn` no seu terminal para instalar todas as dependências e você terá o seguinte código:
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f8032e9-d459-4c6f-a60f-d8c90fd9bc5a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f8032e9-d459-4c6f-a60f-d8c90fd9bc5a/Untitled.png)
-
 ## Rotas da aplicação
-
-Com o template já clonado e o arquivo `index.js` aberto, você deve completar onde não possui código com o código para atingir os objetivos de cada teste.
 
 ### POST `/users`
 
@@ -66,7 +50,7 @@ A rota deve receber `title` e `deadline` dentro do corpo da requisição e, uma 
 
 **Observação**: Lembre-se de iniciar a propriedade `done` sempre como `false` ao criar um *todo*.
 
-**Dica**: Ao fazer a requisição com o Insomnia ou Postman, preencha a data de `deadline` com o formato `ANO-MÊS-DIA` e ao salvar a tarefa pela rota, faça da seguinte forma: 
+**Dica**: Ao fazer a requisição, preencha a data de `deadline` com o formato `ANO-MÊS-DIA` e ao salvar a tarefa pela rota, faça da seguinte forma: 
 
 ```jsx
 { 
@@ -93,16 +77,7 @@ A rota deve receber, pelo header da requisição, uma propriedade `username` con
 
 A rota deve receber, pelo header da requisição, uma propriedade `username` contendo o username do usuário e excluir o *todo* que possuir um `id` igual ao `id` presente nos parâmetros da rota.
 
-## Específicação dos testes
-
-Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
-
-<aside>
-💡 Caso você tenha dúvidas quanto ao que são os testes, e como interpretá-los, dê uma olhada em **[nosso FAQ](https://www.notion.so/FAQ-Desafios-ddd8fcdf2339436a816a0d9e45767664)**
-
-</aside>
-
-Para esse desafio, temos os seguintes testes:
+## Testes
 
 ### Testes de usuários
 
@@ -138,7 +113,6 @@ Para completar todos os testes referentes à *todos* é necessário antes ter co
 
 **Observação:** O username deve ser enviado pelo header em uma propriedade chamada `username`:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c538c34-498a-4789-9bb4-0f286d9b2cf2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c538c34-498a-4789-9bb4-0f286d9b2cf2/Untitled.png)
 
 - **Should be able to list all user's todos**
 
